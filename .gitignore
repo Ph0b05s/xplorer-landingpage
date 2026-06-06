@@ -1,0 +1,21 @@
+# ── Ne JAMAIS publier : prototype (contient .env.local avec des clés secrètes) ──
+x-plorer-app/
+Lab landing page/
+
+# Secrets / env
+*.env
+*.env.*
+.env
+.env.*
+
+# Dépendances / build
+node_modules/
+.next/
+dist/
+build/
+
+# OS / éditeur
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

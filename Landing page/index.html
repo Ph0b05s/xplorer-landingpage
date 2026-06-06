@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>X-plorer — Ton bien-être intime, décodé</title>
+  <meta name="description" content="X-plorer t'aide à comprendre et améliorer ton équilibre intime : bilan IA personnalisé, recommandations adaptées, accompagnement confidentiel. Préinscris-toi." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Supabase JS (préinscription) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+</head>
+
+<body>
+  <div class="landing">
+
+    <!-- ═══ NAV ═══ -->
+    <header class="landing-nav">
+      <div class="landing-nav-inner">
+        <span class="app-header-brand"><span class="brand-dot">X</span>X-plorer</span>
+        <nav class="landing-nav-links">
+          <a href="#fonctionnalites">Fonctionnalités</a>
+          <a href="#demo">La démo</a>
+          <a href="#confidentialite">Confidentialité</a>
+          <a href="#preinscription" class="btn-primary" style="padding:10px 18px;font-size:14px;">Je me préinscris</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="landing-hero">
+      <div class="landing-hero-inner">
+        <div>
+          <span class="landing-eyebrow">Bien-être intime · Sans tabou</span>
+          <h1 class="landing-h1">Ton bien-être intime, <span class="text-coral">décodé.</span></h1>
+          <p class="landing-lead">
+            X-plorer t'aide à comprendre et améliorer ton équilibre intime grâce à un bilan personnalisé,
+            des recommandations adaptées et un accompagnement respectueux de ta vie privée.
+            <strong>Bientôt disponible — préinscris-toi.</strong>
+          </p>
+          <div class="landing-cta-row">
+            <a href="#preinscription" class="btn-primary" style="padding:16px 28px;">
+              Je veux être parmi les premières <span data-icon="chevron-right" data-size="18"></span>
+            </a>
+            <a href="#demo" class="btn-ghost" style="padding:16px 24px;font-size:15px;">Voir la démo de Léa</a>
+          </div>
+          <div class="landing-trust">
+            <span><span data-icon="lock" data-size="14"></span> Données chiffrées</span>
+            <span><span data-icon="heart" data-size="14"></span> Hébergement EU</span>
+            <span><span data-icon="sparkles" data-size="14"></span> IA responsable</span>
+          </div>
+        </div>
+
+        <div class="landing-hero-right">
+          <div class="landing-preview">
+            <div class="landing-preview-header">
+              <span class="label-sm text-muted">Aperçu — profil « Léa »</span>
+              <span class="label-sm" style="color:var(--primary);">X-Score</span>
+            </div>
+            <div class="landing-preview-score">
+              <span class="display display-lg">60</span>
+              <span class="body-sm text-muted">+11 ce mois-ci</span>
+            </div>
+            <div class="landing-pillars">
+              <div class="landing-pillar">
+                <span class="label-sm text-muted">Énergie</span>
+                <span class="headline headline-md" style="color:var(--primary);">60%</span>
+              </div>
+              <div class="landing-pillar">
+                <span class="label-sm text-muted">Désir</span>
+                <span class="headline headline-md" style="color:var(--primary);">30%</span>
+              </div>
+              <div class="landing-pillar">
+                <span class="label-sm text-muted">Sérénité</span>
+                <span class="headline headline-md" style="color:var(--primary);">70%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ FONCTIONNALITÉS ═══ -->
+    <section id="fonctionnalites" class="landing-features">
+      <div class="landing-section-inner">
+        <span class="label-sm" style="color:var(--primary);">Fonctionnalités</span>
+        <h2 class="display display-md" style="margin-top:8px;">Tout ce qu'il te faut pour comprendre, décider, progresser.</h2>
+        <div class="landing-features-grid">
+          <div class="landing-feature">
+            <div class="landing-feature-icon"><span data-icon="sparkles" data-size="20"></span></div>
+            <h3 class="headline headline-sm" style="margin:0 0 6px;">Bilan IA en 3 minutes</h3>
+            <p class="body-sm text-muted" style="margin:0;">Un diagnostic personnalisé basé sur tes réponses, ton stress, ton sommeil et ton désir.</p>
+          </div>
+          <div class="landing-feature">
+            <div class="landing-feature-icon"><span data-icon="lock" data-size="20"></span></div>
+            <h3 class="headline headline-sm" style="margin:0 0 6px;">100% confidentiel</h3>
+            <p class="body-sm text-muted" style="margin:0;">Hébergement en Europe, chiffrement de bout en bout, aucune donnée revendue.</p>
+          </div>
+          <div class="landing-feature">
+            <div class="landing-feature-icon"><span data-icon="heart" data-size="20"></span></div>
+            <h3 class="headline headline-sm" style="margin:0 0 6px;">Recommandations sur mesure</h3>
+            <p class="body-sm text-muted" style="margin:0;">Exercices, méditations et lectures adaptés à ton profil et tes objectifs.</p>
+          </div>
+          <div class="landing-feature">
+            <div class="landing-feature-icon"><span data-icon="users" data-size="20"></span></div>
+            <h3 class="headline headline-sm" style="margin:0 0 6px;">Thérapeutes validés</h3>
+            <p class="body-sm text-muted" style="margin:0;">Accède à un réseau de professionnels du bien-être intime certifiés.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ DÉMO (mockup + iframe) ═══ -->
+    <section id="demo" class="landing-demo">
+      <div class="landing-section-inner landing-demo-grid">
+        <div class="phone-mock">
+          <div class="phone-screen">
+            <iframe src="../Démo/index.html" title="Démo interactive X-plorer — profil Léa" loading="lazy"></iframe>
+          </div>
+        </div>
+        <div>
+          <span class="label-sm" style="color:var(--primary);">Démo interactive</span>
+          <h2 class="display display-md" style="margin:8px 0 12px;">Vis le parcours de Léa, en vrai.</h2>
+          <p class="body-lg text-muted" style="margin:0 0 4px;max-width:520px;">
+            Léa, 38 ans, en couple, veut comprendre pourquoi son désir s'est mis en pause.
+            Déroule son bilan et découvre ce que l'app lui révèle — directement dans l'écran, à droite.
+          </p>
+          <ol class="demo-steps">
+            <li class="demo-step"><span class="demo-step-num">1</span><span class="body-md">Elle répond au bilan en 3 minutes (réponses pré-remplies, modifiables).</span></li>
+            <li class="demo-step"><span class="demo-step-num">2</span><span class="body-md">L'IA calcule son X-Score et détecte ses leviers.</span></li>
+            <li class="demo-step"><span class="demo-step-num">3</span><span class="body-md">Elle obtient un plan de soin et des expériences sur mesure.</span></li>
+          </ol>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;">
+            <a href="../Démo/index.html" target="_blank" rel="noopener" class="btn-primary" style="padding:14px 24px;font-size:15px;">
+              Lancer la démo en plein écran <span data-icon="chevron-right" data-size="16"></span>
+            </a>
+            <a href="#preinscription" class="btn-ghost" style="padding:14px 22px;font-size:14px;">Me préinscrire</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PERSONA (récit Léa) ═══ -->
+    <section class="landing-persona">
+      <div class="landing-section-inner">
+        <span class="label-sm" style="color:var(--primary);">Le profil de Léa</span>
+        <h2 class="display display-md" style="margin:8px 0 28px;">Un désir « en pause » — et un chemin pour le réveiller.</h2>
+        <div class="persona-card">
+          <div>
+            <div class="persona-avatar">L</div>
+            <p class="persona-quote">« Mon désir s'est mis en pause depuis la naissance de notre dernier. Je veux comprendre, pas culpabiliser. »</p>
+            <p class="body-md text-muted" style="margin:0;">Léa, 38 ans · En couple depuis 7 ans · Profil <strong>« À réveiller »</strong></p>
+          </div>
+          <div class="persona-insight">
+            <div class="persona-insight-tag"><span data-icon="spark" data-size="12"></span> Trio de facteurs corrélés</div>
+            <div class="headline headline-sm" style="margin-bottom:6px;">Pourquoi son désir baisse les soirs de semaine</div>
+            <p class="body-sm text-muted" style="margin:0 0 6px;">
+              Charge mentale, dette de sommeil et phase hormonale forment un creux de désir reproductible entre 19h et 22h.
+            </p>
+            <div class="persona-chip-row">
+              <span class="label-sm" style="flex:0 0 110px;color:var(--on-surface);">Charge mentale</span>
+              <div class="persona-chip-bar"><div class="persona-chip-fill" style="width:38%;background:linear-gradient(90deg,#4A1F4D,#6E366E);"></div></div>
+              <span class="label-sm text-coral" style="font-weight:800;">−8 pts</span>
+            </div>
+            <div class="persona-chip-row">
+              <span class="label-sm" style="flex:0 0 110px;color:var(--on-surface);">Dette de sommeil</span>
+              <div class="persona-chip-bar"><div class="persona-chip-fill" style="width:40%;background:linear-gradient(90deg,#6FA8DC,#A6CFEC);"></div></div>
+              <span class="label-sm text-coral" style="font-weight:800;">−6 pts</span>
+            </div>
+            <div style="margin-top:16px;background:var(--surface-white);border-radius:14px;padding:14px 16px;">
+              <div class="label-sm text-coral" style="margin-bottom:4px;">Fenêtre favorable</div>
+              <div class="title-md">Vendredi–Dimanche, 14h-17h</div>
+              <p class="body-sm text-muted" style="margin:4px 0 0;">Son désir spontané augmente de +34% sur cette fenêtre. Son plan a été adapté.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CONFIDENTIALITÉ ═══ -->
+    <section id="confidentialite" class="landing-privacy">
+      <div class="landing-section-inner landing-privacy-inner">
+        <div>
+          <span class="label-sm" style="color:var(--secondary-deep);">Confidentialité</span>
+          <h2 class="display display-md" style="margin:8px 0 16px;color:#fff;">Tes données ne sortent pas d'Europe.</h2>
+          <p class="body-lg" style="color:rgba(255,255,255,0.78);max-width:520px;">
+            Hébergement EU, chiffrement en transit et au repos, aucune revente, aucune publicité.
+            Tu peux exporter ou supprimer tes données à tout moment.
+          </p>
+        </div>
+        <ul class="landing-privacy-list">
+          <li><span data-icon="lock" data-size="16"></span> Authentification sécurisée</li>
+          <li><span data-icon="lock" data-size="16"></span> Données hébergées en Europe</li>
+          <li><span data-icon="lock" data-size="16"></span> Aucune donnée revendue, aucune pub</li>
+          <li><span data-icon="lock" data-size="16"></span> RGPD : export & suppression en 1 clic</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ═══ PRÉINSCRIPTION ═══ -->
+    <section id="preinscription" class="landing-signup">
+      <div class="signup-inner">
+        <span class="label-sm" style="color:var(--primary);">Préinscription</span>
+        <h2 class="display display-md" style="margin:8px 0 12px;">Rejoins les premières utilisatrices.</h2>
+        <p class="body-md text-muted" style="margin:0 0 6px;">
+          L'application est en cours de développement. Laisse ton email pour être prévenue en avant-première
+          et bénéficier d'un accès privilégié au lancement.
+        </p>
+        <div class="social-proof"><span class="dot"></span><span id="social-proof-counter">312 personnes déjà préinscrites</span></div>
+
+        <form class="signup-form" id="signup-form" novalidate>
+          <div class="signup-field">
+            <label class="signup-label" for="email-input">Adresse email</label>
+            <input type="email" id="email-input" name="email" class="signup-input" placeholder="lea@email.com" required autocomplete="email" />
+          </div>
+          <div class="consent-block">
+            <input type="checkbox" id="consent-checkbox" name="consent" required />
+            <label class="consent-label" for="consent-checkbox">
+              J'accepte que mon email soit utilisé uniquement pour me notifier du lancement de X-plorer.
+              Aucune donnée transmise à des tiers. Conformément au RGPD, droit d'accès, de rectification et de
+              suppression sur simple demande à <a href="mailto:xplorer.contactfr@gmail.com">xplorer.contactfr@gmail.com</a>.
+            </label>
+          </div>
+          <button type="submit" id="submit-btn" class="btn-primary" style="width:100%;" disabled>
+            Je me préinscris
+          </button>
+          <p class="signup-gdpr">Tes données ne seront jamais revendues. Désinscription possible à tout moment.</p>
+        </form>
+
+        <div id="form-message" class="form-message" role="status" aria-live="polite"></div>
+
+        <noscript>
+          <p class="signup-gdpr">Active JavaScript pour te préinscrire, ou écris à
+            <a href="mailto:xplorer.contactfr@gmail.com">xplorer.contactfr@gmail.com</a>.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="landing-footer">
+      <div class="landing-section-inner landing-footer-inner">
+        <span class="body-sm text-muted">© 2026 X-plorer · Données chiffrées · Hébergement EU ·
+          <a href="mailto:xplorer.contactfr@gmail.com" style="text-decoration:underline;">Contact</a>
+        </span>
+        <span class="body-sm text-muted">Démo & préinscription</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="icons.js"></script>
+  <script src="preinscribe.js"></script>
+</body>
+</html>
